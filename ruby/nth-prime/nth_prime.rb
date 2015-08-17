@@ -1,0 +1,3 @@
+class NthPrime
+  
+end
