@@ -1,4 +1,4 @@
-var primeFactors = require('./prime-factors');
+var primeFactors = require('./prime_factors');
 
 describe('primeFactors', function() {
 

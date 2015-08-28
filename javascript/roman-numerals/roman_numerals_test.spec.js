@@ -1,4 +1,4 @@
-var toRoman = require('./roman-numerals');
+var toRoman = require('./roman_numerals');
 
 describe("toRoman()", function() {
   it("converts 1", function() {

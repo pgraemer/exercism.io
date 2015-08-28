@@ -9,15 +9,15 @@ Array.prototype.random = function(i) {
     return random;
 };
 
+var usedNames = {};
 module.exports = function() {
     var self = {};
-    var usedNames = [];
     var initName = function() {
         var newName;
         do {
-            n = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').random(2).join('') +  "01234556789".split('').random(3).join(''); 
-        } while (!usedNames.indexOf(newName));
-        usedNames.push(newName);
+            newName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('').random(2).join('') +  "01234556789".split('').random(3).join(''); 
+        } while (typeof usedNames[newName] !== 'undefined');
+        usedNames[newName] = true;
         return newName;
     };
     var name = initName();

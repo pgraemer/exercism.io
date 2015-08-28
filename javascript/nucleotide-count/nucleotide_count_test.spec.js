@@ -1,4 +1,4 @@
-var dna = require('./nucleotide-count');
+var dna = require('./nucleotide_count');
 
 describe('DNA', function() {
 

@@ -1,4 +1,4 @@
-var School = require('./grade-school');
+var School = require('./grade_school');
 
 describe("School", function() {
   var school;

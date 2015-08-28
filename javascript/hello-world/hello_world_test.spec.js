@@ -1,4 +1,4 @@
-var HelloWorld = require('./hello-world');
+var HelloWorld = require('./hello_world');
 
 describe('Hello World', function() {
   var helloWorld = new HelloWorld();
@@ -7,11 +7,11 @@ describe('Hello World', function() {
     expect(helloWorld.hello('')).toEqual('Hello, world!');
   });
 
-  xit('says hello to bob', function() {
+  it('says hello to bob', function() {
     expect(helloWorld.hello('Bob')).toEqual('Hello, Bob!');
   });
 
-  xit('says hello to sally', function() {
+  it('says hello to sally', function() {
     expect(helloWorld.hello('Sally')).toEqual('Hello, Sally!');
   });
 });

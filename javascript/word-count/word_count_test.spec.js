@@ -1,4 +1,4 @@
-var words = require('./word-count');
+var words = require('./word_count');
 
 describe("words()", function() {
   it("counts one word", function() {
@@ -49,6 +49,11 @@ describe("words()", function() {
   it("counts multiple spaces as one", function() {
     var expectedCounts = { hello: 1, world: 1 };
     expect(words("hello  world")).toEqual(expectedCounts);
+  });
+
+  it("does not count leading or trailing whitespace", function() {
+    var expectedCounts = { Introductory: 1, Course: 1 };
+    expect(words("\t\tIntroductory Course      ")).toEqual(expectedCounts);
   });
 
   it("handles properties that exist on Object’s prototype", function() {
