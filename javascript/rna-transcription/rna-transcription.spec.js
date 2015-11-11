@@ -1,4 +1,4 @@
-var toRna = require('./rna_transcription');
+var toRna = require('./rna-transcription');
 
 describe("toRna()", function() {
   it("transcribes cytosine to guanine", function() {
